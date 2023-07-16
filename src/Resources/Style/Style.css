@@ -1,0 +1,125 @@
+#HomescreenBackground {
+	-fx-background-color: linear-gradient(to bottom, #4c9cf6, #0084f6);
+	-fx-background-image: url("../Image/home_template.png");
+	-fx-background-size: cover;
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 10, 0, 0, 0);
+}
+
+.SubPane {
+	-fx-border-color: #776;
+	-fx-border-radius: 20;
+	-fx-border-width: 5;
+	-fx-background-color: rgba(252, 252, 252, 0.5);
+	-fx-background-radius: 20;
+}
+
+.button {
+    -fx-padding: 0 0 0 0;
+    -fx-background-insets: 0 0 0 0, 0 0 10 0;
+    -fx-background-radius: 30;
+    -fx-background-color: rgba(213, 240, 209, 0.7);
+    -fx-font-family: "Courier New";
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    -fx-text-fill: #766;
+}
+
+.button: hover {
+    -fx-background-color: rgba(252, 252, 252, 1);
+}
+
+.button: pressed {
+    -fx-padding: 10 15 10 15;
+    -fx-background-insets: 5 0 0 0, 5 0 5 0;
+}
+
+.track {
+    -fx-background-color: #ddd;
+    -fx-background-radius: 5;
+    -fx-pref-height: 8;
+}
+
+.track:horizontal {
+    -fx-background-color: linear-gradient(to right, #ddc, #eee);
+}
+
+.thumb {
+    -fx-background-color: #bbb;
+    -fx-background-radius: 50%;
+    -fx-border-color: #555;
+    -fx-border-width: 2;
+    -fx-pref-width: 20;
+    -fx-pref-height: 20;
+}
+
+.thumb:hover {
+    -fx-background-color: #ddd;
+}
+.label {
+    -fx-text-fill: #fff;
+    -fx-background-color: #4d4d4d;
+    -fx-padding: 8;
+    -fx-font-family: "Arial";
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-border-radius: 5;
+}
+.BoardCell {
+    -fx-border-color: #ddd;
+    -fx-border-width: 2;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);
+}
+
+.BoardCell:hover {
+    -fx-background-color: #f2f2f2;
+}
+
+
+.BoardEnd0 {
+    -fx-shape: "M 0 0 L 0 -6 A 1 1 0 0 0 0 6 L 0 0";
+}
+
+.BoardEnd1 {
+    -fx-shape: "M 0 0 L 0 6 A 1 1 0 0 0 0 -6 L 0 0";
+}
+
+.BoardGem {
+    -fx-background-color: transparent;
+}
+
+.Gem {
+    -fx-fill: #ccc;
+    -fx-stroke-width: 2;
+    -fx-stroke: #888;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 5, 0, 0, 0);
+}
+.dialog-pane .button {
+    -fx-padding: 10 20;
+    -fx-background-color: #4c9cf6, #0084f6;
+    -fx-background-radius: 20;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 3, 0, 0, 1);
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #52a9ff, #0092ff;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 3, 0, 0, 2);
+}
+ 
+.dialog-pane:header .header-panel .label {
+    -fx-text-fill: #fff;
+    -fx-font-family: "Segoe UI";
+    -fx-font-weight: bold;
+    -fx-font-size: 18;
+    -fx-padding: 5;
+    -fx-background-color: linear-gradient(to bottom, #4c9cf6, #0084f6);
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 2, 0, 0, 1);
+}
