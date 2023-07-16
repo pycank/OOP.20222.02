@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controller.HomeController">
+   <children>
+      <Pane id="HomescreenBackground" fx:id="background" layoutX="10.0" layoutY="10.0" prefHeight="430.0" prefWidth="780.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <GridPane layoutX="61.0" layoutY="303.0" prefHeight="93.0" prefWidth="707.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="Start" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#start" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Start" />
+                  <Button fx:id="Load" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#load" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Load" GridPane.columnIndex="1" />
+                  <Button fx:id="Setting" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#setting" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Setting" GridPane.columnIndex="2" />
+                  <Button fx:id="Exit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#exit" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Exit" GridPane.columnIndex="3" />
+               </children>
+            </GridPane>
+         </children></Pane>
+      <AnchorPane fx:id="settingPane" layoutY="1000.0" prefHeight="450.0" prefWidth="800.0">
+         <children>
+            <fx:include fx:id="SS" source="SettingScreen.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
