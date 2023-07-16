@@ -1,4 +1,3 @@
-# OOP.20222.02
 # Capstone Project of Object-oriented Programming
 Course code: IT3100E<br />
 Class code: 141177 <br />
