@@ -3,9 +3,16 @@
 Course code: IT3100E
 Class code: 141177
 Lecturer: Prof. Nguyen Thi Thu Trang
+Group 02
 Contributor:
-Attempt | #1 | #2 | #3 | #4 | #5 | #6 | #7 | #8 | #9 | #10 | #11
+Name | Student ID | Email | Contributing part 
 --- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
-Seconds | 301 | 283 | 290 | 286 | 289 | 285 | 287 | 287 | 272 | 276 | 269:
+Phan Công Anh | 20210078 | Anh.pc210078@sis.hust.edu.vn | Game Model, Utils
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Ngô Việt Anh | 20214875 | Anh.nv214875@sis.hust.edu.vn | Controller
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Trần Hoàng Anh | 20210023 | anh.th210023@sis.hust.edu.vn | Controller
+--- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+Nguyễn Hoàng Anh | 20214875 | Anh.nh214946@sis.hust.edu.vn | Game Model, Music
 
 Demo for our product: https://bit.ly/OAnQuanDemo
