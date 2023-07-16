@@ -1,8 +1,8 @@
-package GameManager;
+package GameModel;
 
 import java.util.Arrays;
 
-import MusicAndSound.GemSound;
+import Music.GemSound;
 import javafx.animation.TranslateTransition;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
@@ -15,9 +15,9 @@ public class Moves {
 	private double y;
 	private boolean clockwise;
 	private int gems;
-	private GameManager gm;
+	private Model gm;
 	
-	public Moves(Pane ps, boolean clockwise, int gems, GameManager gm) {
+	public Moves(Pane ps, boolean clockwise, int gems, Model gm) {
 		this.ps = ps;
 		this.x = ps.getWidth();
 		this.y = ps.getHeight();

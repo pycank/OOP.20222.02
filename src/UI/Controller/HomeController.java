@@ -3,7 +3,7 @@ package UI.Controller;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import GameManager.GameManager;
+import GameModel.Model;
 import UI.Utils.Language;
 import UI.Utils.Load;
 import UI.Utils.Resize;
@@ -23,9 +23,9 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 import javafx.stage.Stage;
 
-public class HomeScreenController extends MainPane{
+public class HomeController extends MainPane{
 	
-	private GameManager gm = new GameManager();
+	private Model gm = new Model();
 	
 	@FXML
 	private Pane background;
@@ -46,7 +46,7 @@ public class HomeScreenController extends MainPane{
 	private AnchorPane settingPane;
 	
 	@FXML
-	private SettingScreenController SSController;
+	private SettingDisplayController SSController;
 	
 	public void initialize() {
 		
@@ -64,14 +64,14 @@ public class HomeScreenController extends MainPane{
 	
 	public void start(MouseEvent e) throws IOException { //Start a new game
 		
-		gm = new GameManager();
+		gm = new Model();
 		load(e);
 		
 	}
 	
 	public void load(MouseEvent e) throws IOException { //Load existed game
 		
-		GameScreenController gsc = new GameScreenController(gm);
+		GameDisplayController gsc = new GameDisplayController(gm);
 		String name = "GameScreen";
 		FXMLLoader fxml = new FXMLLoader(getClass().getClassLoader().getResource("Resources/fxml/" + name + ".fxml"));
 

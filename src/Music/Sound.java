@@ -1,4 +1,4 @@
-package MusicAndSound;
+package Music;
 
 import java.io.File;
 

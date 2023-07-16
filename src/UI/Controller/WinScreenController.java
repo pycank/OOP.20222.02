@@ -3,7 +3,7 @@ package UI.Controller;
 import java.io.File;
 import java.io.IOException;
 
-import GameManager.GameManager;
+import GameModel.Model;
 import UI.Utils.Language;
 import UI.Utils.Resize;
 import javafx.fxml.FXML;
@@ -49,9 +49,9 @@ public class WinScreenController extends SubPaneController {
 	
 	public void start(MouseEvent e) throws IOException { //Start a new game
 		
-		GameManager gm = new GameManager();
+		Model gm = new Model();
 		
-		GameScreenController GSController = new GameScreenController(gm);
+		GameDisplayController GSController = new GameDisplayController(gm);
 		
 		String name = "GameScreen";
 		FXMLLoader fxml = new FXMLLoader(getClass().getClassLoader().getResource("Resources/fxml/" + name + ".fxml"));

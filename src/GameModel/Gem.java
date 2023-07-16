@@ -1,4 +1,4 @@
-package GameManager;
+package GameModel;
 
 import java.util.Random;
 

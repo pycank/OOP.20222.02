@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controller.SettingScreenController">
+<AnchorPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UI.Controller.SettingDisplayController">
    <children>
       <GridPane prefHeight="300.0" prefWidth="600.0" styleClass="SubPane" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
          <children>
@@ -16,12 +19,9 @@
             <Button fx:id="SFXBtn" mnemonicParsing="false" onMouseClicked="#muteSFX" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="60.0" GridPane.rowIndex="1" />
             <Slider fx:id="SFX" majorTickUnit="20.0" minorTickCount="1" value="100.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
             <Label fx:id="SFXLabel" alignment="CENTER" prefHeight="60.0" prefWidth="120.0" text="SFX" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-            <Button fx:id="Return" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#rturn" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Return" GridPane.rowIndex="3" />
+            <Button fx:id="Return" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#rturn" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Return" GridPane.rowIndex="2" />
             <Button fx:id="Help" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#help" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Help" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Button fx:id="Credit" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#credit" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Credit" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-            <Button fx:id="Vietnamese" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#languageViet" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Tieng Viet" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <Button fx:id="English" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#languageEng" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="English" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <Button fx:id="Home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#home" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Home" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="Home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#home" onMouseEntered="#hovering" prefHeight="60.0" prefWidth="120.0" text="Home" GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
          <columnConstraints>
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="20.0" />
@@ -37,14 +37,7 @@
             <RowConstraints percentHeight="25.0" vgrow="SOMETIMES" />
          </rowConstraints>
       </GridPane>
-      <AnchorPane fx:id="helpPane" layoutY="1000.0" prefHeight="450.0" prefWidth="800.0">
-         <children>
-            <fx:include fx:id="HS" source="HelpScreen.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-         </children></AnchorPane>
-      <AnchorPane fx:id="creditPane" layoutY="1000.0" prefHeight="450.0" prefWidth="800.0">
-         <children>
-            <fx:include fx:id="CS" source="CreditScreen.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-         </children></AnchorPane>
+      <AnchorPane fx:id="helpPane" layoutY="1000.0" prefHeight="450.0" prefWidth="800.0" />
    </children>
    <opaqueInsets>
       <Insets />

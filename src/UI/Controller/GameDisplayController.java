@@ -1,9 +1,9 @@
 package UI.Controller;
 
-import GameManager.GameManager;
-import GameManager.Gem;
-import GameManager.MandarinGem;
-import GameManager.Moves;
+import GameModel.Model;
+import GameModel.Gem;
+import GameModel.BigGem;
+import GameModel.Moves;
 import UI.Utils.Language;
 import UI.Utils.Resize;
 import UI.Utils.Save;
@@ -26,13 +26,13 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 
-public class GameScreenController extends MainPane{
+public class GameDisplayController extends MainPane{
 	
-	private GameManager gm;
+	private Model gm;
 	
     private BooleanProperty end = new SimpleBooleanProperty(true);
 	
-	public GameScreenController(GameManager GM) {
+	public GameDisplayController(Model GM) {
 		this.gm = GM;
 	}
     
@@ -94,7 +94,7 @@ public class GameScreenController extends MainPane{
     private AnchorPane winPane1;
     
 	@FXML
-	private SettingScreenController SSController;
+	private SettingDisplayController SSController;
     
     @FXML
     private WinScreenController WS0Controller;
@@ -113,7 +113,7 @@ public class GameScreenController extends MainPane{
 			
 			if (id.equals("00")) {
 				if (gm.hasMandarin0()) {
-					p.getChildren().add(new MandarinGem());
+					p.getChildren().add(new BigGem());
 					for (int n = 0; n < gems - 1; n++) {
 						p.getChildren().add(new Gem());
 					}
@@ -126,7 +126,7 @@ public class GameScreenController extends MainPane{
 			}
 			else if (id.equals("66")) {
 				if (gm.hasMandarin6()) {
-					p.getChildren().add(new MandarinGem());
+					p.getChildren().add(new BigGem());
 					for (int n = 0; n < gems - 1; n++) {
 						p.getChildren().add(new Gem());
 					}

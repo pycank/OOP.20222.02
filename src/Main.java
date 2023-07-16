@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-import MusicAndSound.BackgroundMusic;
+import Music.BackgroundMusic;
 import UI.Utils.Language;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -24,12 +24,12 @@ public class Main extends Application {
 		
 		Parent root = fxml.load();
 
-		Scene scene = new Scene(root, 800d, 450d);
+		Scene scene = new Scene(root, 1000, 600);
 		scene.getStylesheets().add("Resources/Style/Style.css");
 
 		stage.setScene(scene);
-		stage.setMinWidth(800);
-		stage.setMinHeight(450);
+		stage.setMinWidth(1000);
+		stage.setMinHeight(600);
 		stage.setTitle("O An Quan");
 		stage.getIcons().add(new Image("Resources/Image/icon.png"));
 		stage.show();

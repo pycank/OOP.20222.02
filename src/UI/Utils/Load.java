@@ -4,13 +4,13 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-import GameManager.GameManager;
-import MusicAndSound.BackgroundMusic;
+import GameModel.Model;
+import Music.BackgroundMusic;
 import javafx.scene.control.Slider;
 
 public class Load {
 	
-	public Load(GameManager gm) throws FileNotFoundException {
+	public Load(Model gm) throws FileNotFoundException {
 		
 		File file = new File("src/Resources/GameState/gamestate.txt");
 		

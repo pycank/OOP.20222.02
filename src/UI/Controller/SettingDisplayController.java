@@ -2,8 +2,8 @@ package UI.Controller;
 
 import java.io.FileNotFoundException;
 
-import MusicAndSound.BackgroundMusic;
-import MusicAndSound.Sound;
+import Music.BackgroundMusic;
+import Music.Sound;
 import UI.Utils.Language;
 import UI.Utils.Load;
 import UI.Utils.Resize;
@@ -20,7 +20,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Region;
 
-public class SettingScreenController extends SubPaneController {
+public class SettingDisplayController extends SubPaneController {
 
 	@FXML
 	private Button MusicBtn;
@@ -40,29 +40,19 @@ public class SettingScreenController extends SubPaneController {
 	@FXML
 	private Label SFXLabel;
 
-	@FXML
-	private Button English;
-
-	@FXML
-	private Button Vietnamese;
 
 	@FXML
 	private Button Help;
 
-	@FXML
-	private Button Credit;
 
 	@FXML
 	private AnchorPane helpPane;
 
-	@FXML
-	private AnchorPane creditPane;
+
 
 	@FXML
-	private HelpCreditScreenController HSController;
+	private HelpController HSController;
 
-	@FXML
-	private HelpCreditScreenController CSController;
 
 	public void initialize() {
 		
@@ -109,9 +99,9 @@ public class SettingScreenController extends SubPaneController {
 		
 		SFXLabel.textProperty().bind(Bindings.convert(SFX.valueProperty().asString("%.0f")));
 		
-		Resize.bind(new Region[] {MusicBtn, SFXBtn, English, Vietnamese, Help, Credit, Return, Home, helpPane, creditPane, MusicLabel, SFXLabel}, main);
+		Resize.bind(new Region[] {MusicBtn, SFXBtn, Help, Return, Home, helpPane, MusicLabel, SFXLabel}, main);
 		
-		Language.bindLang(new Labeled[] {Help, Credit, Return, Home}, main);
+		Language.bindLang(new Labeled[] {Help, Return, Home}, main);
 	
 	}
 
@@ -141,20 +131,12 @@ public class SettingScreenController extends SubPaneController {
 		return SFX.getValue();
 	}
 
-	public void languageEng(MouseEvent e) { // Change the language to English
-		Language.setLang("en");
-	}
 
-	public void languageViet(MouseEvent e) { // Change the language to Vietnamese
-		Language.setLang("vi");
-	}
 
 	public void help(MouseEvent e) { // Show the Help pane
 		HSController.visualise();
 	}
 
-	public void credit(MouseEvent e) { // Show the Credit pane
-		CSController.visualise();
-	}
+
 
 }

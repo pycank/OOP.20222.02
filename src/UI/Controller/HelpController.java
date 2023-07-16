@@ -7,7 +7,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Labeled;
 import javafx.scene.layout.Region;
 
-public class HelpCreditScreenController extends SubPaneController {
+public class HelpController extends SubPaneController {
     
     @FXML
     private Label Text;

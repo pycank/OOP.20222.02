@@ -1,6 +1,6 @@
 package UI.Controller;
 
-import MusicAndSound.HoveringSound;
+import Music.HoveringSound;
 import javafx.fxml.FXML;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;

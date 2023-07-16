@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 
-import GameManager.GameManager;
+import GameModel.Model;
 import javafx.scene.control.Slider;
 
 public class Save {
@@ -28,7 +28,7 @@ public class Save {
 		}
 	}
 	
-	public Save(GameManager gm) {
+	public Save(Model gm) {
 		
 		File file = new File("src/Resources/GameState/gamestate.txt");
 		

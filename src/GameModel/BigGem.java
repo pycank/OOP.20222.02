@@ -1,8 +1,8 @@
-package GameManager;
+package GameModel;
 
-public class MandarinGem extends Gem {
+public class BigGem extends Gem {
 	
-	public MandarinGem() {
+	public BigGem() {
 		super();
 	}
 

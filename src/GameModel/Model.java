@@ -1,4 +1,4 @@
-package GameManager;
+package GameModel;
 
 import java.util.Arrays;
 
@@ -7,7 +7,7 @@ import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleBooleanProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 
-public class GameManager{
+public class Model{
 
 	private boolean turnPlayer0 = true;
 	
