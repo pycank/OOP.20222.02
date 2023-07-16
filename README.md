@@ -1,18 +1,18 @@
 # OOP.20222.02
 # Capstone Project of Object-oriented Programming
-Course code: IT3100E
-Class code: 141177
-Lecturer: Prof. Nguyen Thi Thu Trang
-Group 02
-Contributor:
+Course code: IT3100E__
+Class code: 141177__
+Lecturer: Prof. Nguyen Thi Thu Trang__
+Group 02__
+Contributor:__
 Name | Student ID | Email | Contributing part 
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+-----| -----------| ------| -----------------
 Phan Công Anh | 20210078 | Anh.pc210078@sis.hust.edu.vn | Game Model, Utils
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+-----| -----------| ------| -----------------
 Ngô Việt Anh | 20214875 | Anh.nv214875@sis.hust.edu.vn | Controller
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+-----| -----------| ------| -----------------
 Trần Hoàng Anh | 20210023 | anh.th210023@sis.hust.edu.vn | Controller
---- | --- | --- | --- |--- |--- |--- |--- |--- |--- |--- |---
+-----| -----------| ------| -----------------
 Nguyễn Hoàng Anh | 20214875 | Anh.nh214946@sis.hust.edu.vn | Game Model, Music
 
 Demo for our product: https://bit.ly/OAnQuanDemo
