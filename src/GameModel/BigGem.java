@@ -5,7 +5,7 @@ public class BigGem extends Gem {
 	public BigGem() {
 		super();
 	}
-
+	@Override
 	public void bind() {
 		this.getStyleClass().add("Gem");
 		this.centerXProperty().bind(main.widthProperty().divide(16));

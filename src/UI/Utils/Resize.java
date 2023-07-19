@@ -6,10 +6,9 @@ import javafx.scene.control.Labeled;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 
-import javax.swing.plaf.synth.Region;
-
 public class Resize {
-    	public static void bind(Region[] R, Pane main) {
+	
+	public static void bind(Region[] R, Pane main) {
 		
 		for (int i = 0; i < R.length; i++) {
 			

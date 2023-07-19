@@ -1,6 +1,6 @@
 import java.io.IOException;
 
-import Music.BackgroundMusic;
+
 import UI.Utils.Language;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -16,20 +16,17 @@ public class Main extends Application {
 		
 		Language.setLang("en");
 		
-		BackgroundMusic bgm = new BackgroundMusic();
-		bgm.run();
-
 		String name = "HomeScreen";
 		FXMLLoader fxml = new FXMLLoader(getClass().getClassLoader().getResource("Resources/fxml/" + name + ".fxml"));
 		
 		Parent root = fxml.load();
 
-		Scene scene = new Scene(root, 1000, 600);
+		Scene scene = new Scene(root, 800d, 450d);
 		scene.getStylesheets().add("Resources/Style/Style.css");
 
 		stage.setScene(scene);
-		stage.setMinWidth(1000);
-		stage.setMinHeight(600);
+		stage.setMinWidth(800);
+		stage.setMinHeight(450);
 		stage.setTitle("O An Quan");
 		stage.getIcons().add(new Image("Resources/Image/icon.png"));
 		stage.show();

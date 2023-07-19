@@ -2,7 +2,7 @@ package GameModel;
 
 import java.util.Arrays;
 
-import Music.GemSound;
+
 import javafx.animation.TranslateTransition;
 import javafx.scene.Node;
 import javafx.scene.layout.Pane;
@@ -63,8 +63,7 @@ public class Moves {
 		t.setOnFinished(e -> {
 			
 			{
-				GemSound gs = new GemSound();
-				gs.run();
+				
 				this.add(pe, n);
 				gems -= 1;
 				if (gems > 0) {

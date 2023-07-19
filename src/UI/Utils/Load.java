@@ -5,53 +5,41 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 import GameModel.Model;
-import Music.BackgroundMusic;
-import javafx.scene.control.Slider;
 
-public class Loader {
-    	public Load(Model gm) throws FileNotFoundException {
+
+public class Load {
+	
+	public Load(Model m) throws FileNotFoundException {
 		
 		File file = new File("src/Resources/GameState/gamestate.txt");
 		
 		try (Scanner reader = new Scanner(file)) {
 			
-			if (!gm.isTurnPlayer0() == reader.nextBoolean()) {
-				gm.changeTurn();
+			if (!m.isTurnPlayer0() == reader.nextBoolean()) {
+				m.changeTurn();
 			}
 			
-			if (!gm.hasMandarin0() == reader.nextBoolean()) {
-				gm.changeMandarin0();
+			if (!m.hasMandarin0() == reader.nextBoolean()) {
+				m.changeMandarin0();
 			}
 			
-			if (!gm.hasMandarin6() == reader.nextBoolean()) {
-				gm.changeMandarin6();
+			if (!m.hasMandarin6() == reader.nextBoolean()) {
+				m.changeMandarin6();
 			}
 			
 			int[] CellGems = new int[12];
 			for (int i = 0; i < 12; i++) {
 				CellGems[i] = reader.nextInt();
 			}
-			gm.set(CellGems);
+			m.set(CellGems);
 			
-			gm.setScore0(reader.nextInt());
-			gm.setScore1(reader.nextInt());
+			m.setScore0(reader.nextInt());
+			m.setScore1(reader.nextInt());
 			
 		}
 	}
 	
-	public Load(Slider Music, Slider SFX) throws FileNotFoundException {
-		
-		File file = new File("src/Resources/GameState/setting.txt");
-		
-		try (Scanner reader = new Scanner(file)) {
-			
-			Double d = reader.nextDouble();
-			Music.setValue(d);
-			
-			d = reader.nextDouble();
-			SFX.setValue(d);
-			
-			BackgroundMusic.setVolume(d);
-		}
-	}
+	
+	
+
 }

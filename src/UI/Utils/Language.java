@@ -10,7 +10,8 @@ import javafx.scene.control.Labeled;
 import javafx.scene.layout.Pane;
 
 public class Language {
-    private static ObjectProperty<ResourceBundle> resources = new SimpleObjectProperty<>();
+	
+	private static ObjectProperty<ResourceBundle> resources = new SimpleObjectProperty<>();
 	
 	public static void setLang(String lang) {
 		
