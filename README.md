@@ -11,4 +11,4 @@ Ngô Việt Anh | 20214875 | Anh.nv214875@sis.hust.edu.vn | Controller and Desig
 Trần Hoàng Anh | 20210023 | anh.th210023@sis.hust.edu.vn | Controller
 Nguyễn Hoàng Anh | 20214875 | Anh.nh214946@sis.hust.edu.vn | Game Model, Controller
 
-Demo for our product: https://bit.ly/OAnQuanDemo
+Demo for our product: https://bit.ly/OanquanDemo
