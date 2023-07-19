@@ -10,12 +10,12 @@ import javafx.util.Duration;
 
 public class Moves {
 	
-	private Pane ps;
+	private Pane ps; //Current cell
 	private double x;
 	private double y;
-	private boolean clockwise;
+	private boolean clockwise; //Move clockwise or anti-clockwise
 	private int gems;
-	private Model gm;
+	private Model gm; //Game model
 	
 	public Moves(Pane ps, boolean clockwise, int gems, Model gm) {
 		this.ps = ps;
@@ -27,14 +27,18 @@ public class Moves {
 		gm.rmv(ps.getId());
 	}
 	
-	public void Side(Pane pe) { //Move gems to the left or right
+	public void Side(Pane pe) { 
+		/**
+		 * Move gems from current cell to the next cell
+		 * @param pe: next cell
+		 */
 		ps.getParent().toFront();
-		String start = ps.getId();
-		String end = pe.getId();
+		String start = ps.getId(); // Current cell
+		String end = pe.getId(); // Next cell
 		double nx = 0;
 		double ny = 0;
 		
-		nx = end.charAt(1) - start.charAt(1);
+		nx = end.charAt(1) - start.charAt(1); // Get distance between two cells on x-axis
 		if (end.charAt(1) == '0' || end.charAt(1) == '6') { //If move to the BoardEnd
 			if (start.charAt(0) == '0') {
 				ny = 0.5;
@@ -67,6 +71,7 @@ public class Moves {
 				this.add(pe, n);
 				gems -= 1;
 				if (gems > 0) {
+					// if there are still gems to move, recursively call Side() to move the next gem
 					this.Side(next(pe));
 				}
 				else if (gems == 0) {
@@ -101,8 +106,12 @@ public class Moves {
 		ps.getChildren().remove(0);
 	}
 	
-	public void add(Pane pe, Node n) { //Add gems into cell
-		
+	public void add(Pane pe, Node n) { 
+		/**
+		 * Add gems to the next cell
+		 * @param pe: next cell
+		 * @param n: gem
+		 */
 		pe.getChildren().add(n);
 		n.setTranslateX(0);
 		n.setTranslateY(0);
@@ -116,7 +125,12 @@ public class Moves {
 		
 	}
 	
-	public Pane next(Pane pe) { //Get the next cell
+	public Pane next(Pane pe) { 
+		/**
+		 * Get the next cell
+		 * @param pe: current cell
+		 * @return next cell
+		 */
 		String end = pe.getId();
 		String newEnd = "";
 		
@@ -132,8 +146,12 @@ public class Moves {
 		
 	}
 	
-	public void eat(Pane p) { //Eat the cell
-		
+	public void eat(Pane p) { 
+		/**
+		 * Eat all gems in cell
+		 * @param p: cell
+		 */
+		// loop through all gems in the cell
 		for (int i = 0; i < p.getChildren().size(); i++) {
 			
 			Node n = p.getChildren().get(i);
@@ -248,6 +266,10 @@ public class Moves {
 	}
 	
 	public void checkEnd() {
+		/**
+		 * Check if the game is ended
+		 * If the game is ended, call GameModel.Ended() to end the game
+		 */
 		if (((Pane) ps.getScene().lookup("#00")).getChildren().size() == 0
 				&& ((Pane) ps.getScene().lookup("#66")).getChildren().size() == 0) {
 			System.out.println("Game is ended");
