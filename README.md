@@ -7,8 +7,8 @@ Contributor: <br />
 Name | Student ID | Email | Contributing part 
 |----|------------|-------|------------------|
 Phan Công Anh | 20210078 | Anh.pc210078@sis.hust.edu.vn | Game Model, Utils
-Ngô Việt Anh | 20214875 | Anh.nv214875@sis.hust.edu.vn | Controller
+Ngô Việt Anh | 20214875 | Anh.nv214875@sis.hust.edu.vn | Controller and Design fxml
 Trần Hoàng Anh | 20210023 | anh.th210023@sis.hust.edu.vn | Controller
-Nguyễn Hoàng Anh | 20214875 | Anh.nh214946@sis.hust.edu.vn | Game Model, Music
+Nguyễn Hoàng Anh | 20214875 | Anh.nh214946@sis.hust.edu.vn | Game Model, Controller
 
 Demo for our product: https://bit.ly/OAnQuanDemo
