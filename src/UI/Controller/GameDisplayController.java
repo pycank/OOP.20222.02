@@ -97,10 +97,10 @@ public class GameDisplayController extends MainPane{
 	private SettingDisplayController SSController;
     
     @FXML
-    private WinScreenController WS0Controller;
+    private WinDisplayController WS0Controller;
     
     @FXML
-    private WinScreenController WS1Controller;
+    private WinDisplayController WS1Controller;
     
 	public void initialize() {
 				
