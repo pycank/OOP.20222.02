@@ -67,7 +67,7 @@ public class WinDisplayController extends SubPaneController {
 		
 	}
 	
-	public void home(MouseEvent e) throws IOException { //Back to Home pane
+	public void goBackHome(MouseEvent e) throws IOException { //Back to Home pane
 		
 		File file = new File("src/Resources/GameState/gamestate.txt");
 		file.delete();

@@ -7,17 +7,16 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Labeled;
 import javafx.scene.layout.Region;
 
-public class HelpController extends SubPaneController {
-    
+public class HelpController extends SubPaneController
+{
     @FXML
     private Label Text;
     
-	public void initialize() {
-		
+	public void initialize()
+	{
 		Resize.bind(new Region[] {Return}, main);
 		Resize.bind(new Region[] {Text}, main, false);
 		
 		Language.bindLang(new Labeled[] {Return, Text}, main);
-		
 	}
 }

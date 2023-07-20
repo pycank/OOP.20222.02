@@ -87,7 +87,7 @@ public class HomeDisplayController extends MainPane{
 	}
 	
 	public void setting(MouseEvent e) { //Show the Setting pane
-		SSController.visualise();
+		SSController.showPane();
 	}
 	
 	public void exit(MouseEvent e) { //Terminate the application

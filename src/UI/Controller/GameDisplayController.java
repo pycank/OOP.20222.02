@@ -153,11 +153,11 @@ public class GameDisplayController extends MainPane{
 			@Override
 			public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
 				if (gm.getScore0().intValue() >= gm.getScore1().intValue()) {
-					WS0Controller.visualise();	
+					WS0Controller.showPane();	
 					WS0Controller.addScore(Integer.toString(gm.getScore0().intValue()));
 				}
 				else {
-					WS1Controller.visualise();	
+					WS1Controller.showPane();	
 					WS1Controller.addScore(Integer.toString(gm.getScore1().intValue()));
 				}
 			}
@@ -173,7 +173,7 @@ public class GameDisplayController extends MainPane{
 		
 		new Save(gm);
 
-		SSController.visualise();
+		SSController.showPane();
 	}
 	
 	public void enter (MouseEvent e) { //Show the number of gems inside

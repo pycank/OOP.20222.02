@@ -13,8 +13,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Region;
 
-public class SettingDisplayController extends SubPaneController {
-	
+public class SettingDisplayController extends SubPaneController
+{
 	@FXML
 	private Button Help;
 
@@ -24,18 +24,15 @@ public class SettingDisplayController extends SubPaneController {
 	@FXML
 	private HelpController HSController;
 
-	public void initialize() {
-	
-		Resize.bind(new Region[] {Help,Return, Home, helpPane}, main);
-		
+	public void initialize()
+	{
+		Resize.bind(new Region[] {Help, Return, Home, helpPane}, main);
 		Language.bindLang(new Labeled[] {Help, Return, Home}, main);
-	
 	}
 
-
-	public void help(MouseEvent e) { // Show Help pane
-		HSController.visualise();
+	// Called when user clicks the "Help" button. Shows the Help pane.
+	public void showHelp(MouseEvent e)
+	{
+		HSController.showPane();
 	}
-
-
 }

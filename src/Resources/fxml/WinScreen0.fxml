@@ -29,7 +29,7 @@
             <Label fx:id="Of" alignment="CENTER_RIGHT" prefHeight="160.0" prefWidth="600.0" style="-fx-font-size: 40;" text="Score" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2" />
             <Label fx:id="Score" alignment="CENTER" prefHeight="160.0" prefWidth="600.0" style="-fx-font-size: 40;" text="00" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <Button fx:id="Again" mnemonicParsing="false" onMouseClicked="#start" prefHeight="60.0" prefWidth="120.0" text="Again" GridPane.rowIndex="3" />
-            <Button fx:id="Home" mnemonicParsing="false" onMouseClicked="#home" prefHeight="60.0" prefWidth="120.0" text="Home" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+            <Button fx:id="Home" mnemonicParsing="false" onMouseClicked="#goBackHome" prefHeight="60.0" prefWidth="120.0" text="Home" GridPane.columnIndex="4" GridPane.rowIndex="3" />
          </children>
       </GridPane>
    </children>

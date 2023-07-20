@@ -11,9 +11,9 @@
    <children>
       <GridPane prefHeight="300.0" prefWidth="600.0" styleClass="SubPane" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="30.0">
          <children>
-            <Button fx:id="Return" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#rturn" prefHeight="60.0" prefWidth="120.0" text="Return" GridPane.rowIndex="2" />
-            <Button fx:id="Help" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#help" prefHeight="60.0" prefWidth="120.0" text="Help" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-            <Button fx:id="Home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#home" prefHeight="60.0" prefWidth="120.0" text="Home" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="Return" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#hidePane" prefHeight="60.0" prefWidth="120.0" text="Return" GridPane.rowIndex="2" />
+            <Button fx:id="Help" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#showHelp" prefHeight="60.0" prefWidth="120.0" text="Help" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+            <Button fx:id="Home" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#goBackHome" prefHeight="60.0" prefWidth="120.0" text="Home" GridPane.columnIndex="2" GridPane.rowIndex="2" />
          </children>
          <columnConstraints>
             <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" percentWidth="20.0" />
