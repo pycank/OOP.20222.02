@@ -112,7 +112,7 @@ public class GameDisplayController extends MainPane{
 			Gem.main(main);
 			
 			if (id.equals("00")) {
-				if (gm.hasMandarin0()) {
+				if (gm.hasBig0()) {
 					p.getChildren().add(new BigGem());
 					for (int n = 0; n < gems - 1; n++) {
 						p.getChildren().add(new Gem());
@@ -125,7 +125,7 @@ public class GameDisplayController extends MainPane{
 				}
 			}
 			else if (id.equals("66")) {
-				if (gm.hasMandarin6()) {
+				if (gm.hasBig6()) {
 					p.getChildren().add(new BigGem());
 					for (int n = 0; n < gems - 1; n++) {
 						p.getChildren().add(new Gem());

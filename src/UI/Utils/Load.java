@@ -19,12 +19,12 @@ public class Load {
 				m.changeTurn();
 			}
 			
-			if (!m.hasMandarin0() == reader.nextBoolean()) {
-				m.changeMandarin0();
+			if (!m.hasBig0() == reader.nextBoolean()) {
+				m.changeBig0();
 			}
 			
-			if (!m.hasMandarin6() == reader.nextBoolean()) {
-				m.changeMandarin6();
+			if (!m.hasBig6() == reader.nextBoolean()) {
+				m.changeBig6();
 			}
 			
 			int[] CellGems = new int[12];

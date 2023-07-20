@@ -41,8 +41,8 @@ public class Save {
 			
 			writer.write(String.valueOf(gm.isTurnPlayer0() + " "));
 			
-			writer.write(String.valueOf(gm.hasMandarin0() + " "));
-			writer.write(String.valueOf(gm.hasMandarin6() + " "));
+			writer.write(String.valueOf(gm.hasBig0() + " "));
+			writer.write(String.valueOf(gm.hasBig6() + " "));
 			
 			writer.write(String.valueOf(gm.getCellIGems()[0] + " "));
 			writer.write(String.valueOf(gm.getCellIGems()[1] + " "));

@@ -172,16 +172,16 @@ public class Moves {
 			t.setOnFinished(e -> {
 				
 				if (p.getId().equals("00")) {
-					if (gm.hasMandarin0()) {
+					if (gm.hasBig0()) {
 						gm.addScores(!gm.isTurnPlayer0(), p.getChildren().size() + 4);
-						gm.changeMandarin0();
+						gm.changeBig0();
 						gm.rmv("00");
 					}
 				}
 				else if (p.getId().equals("66")) {
-					if (gm.hasMandarin6()) {
+					if (gm.hasBig6()) {
 						gm.addScores(!gm.isTurnPlayer0(), p.getChildren().size() + 4);
-						gm.changeMandarin6();
+						gm.changeBig6();
 						gm.rmv("66");
 					}
 				}
@@ -227,7 +227,7 @@ public class Moves {
 			});
 			
 		}
-		System.out.println("Eaten " + p.getId());
+		System.out.println("Capture " + p.getId());
 	}
 	
 	public void spread() {

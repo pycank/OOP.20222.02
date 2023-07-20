@@ -26,7 +26,7 @@ public class SettingDisplayController extends SubPaneController {
 
 	public void initialize() {
 	
-		Resize.bind(new Region[] { Help,Return, Home, helpPane}, main);
+		Resize.bind(new Region[] {Help,Return, Home, helpPane}, main);
 		
 		Language.bindLang(new Labeled[] {Help, Return, Home}, main);
 	

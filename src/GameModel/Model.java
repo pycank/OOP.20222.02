@@ -13,8 +13,8 @@ public class Model{
 	
 	private BooleanProperty end = new SimpleBooleanProperty(false);
 
-	private boolean mandarin0 = true;
-	private boolean mandarin6 = true;
+	private boolean big0 = true;
+	private boolean big6 = true;
 	
 	private final String[] cellID = new String[] {"00", "01", "02", "03", "04", "05", "66", "15", "14", "13", "12", "11"};
 	private int[] cellGems = new int[] {1, 5, 5, 5, 5, 5, 1, 5, 5, 5, 5, 5};
@@ -38,20 +38,20 @@ public class Model{
 		this.end.set(true);
 	}
 	
-	public boolean hasMandarin0() {
-		return mandarin0;
+	public boolean hasBig0() {
+		return big0;
 	}
 	
-	public void changeMandarin0() {
-		mandarin0 = !mandarin0;
+	public void changeBig0() {
+		big0 = !big0;
 	}
 	
-	public boolean hasMandarin6() {
-		return mandarin6;
+	public boolean hasBig6() {
+		return big6;
 	}
 	
-	public void changeMandarin6() {
-		mandarin6 = !mandarin6;
+	public void changeBig6() {
+		big6 = !big6;
 	}
 	
 	public String[] getCellID() {
